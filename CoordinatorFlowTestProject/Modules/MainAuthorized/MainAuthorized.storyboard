@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vAq-qr-LMS">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SettingsVC-->
+        <scene sceneID="BfF-t3-XKM">
+            <objects>
+                <viewController storyboardIdentifier="SettingsVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ohl-cO-0Nq" customClass="SettingsVC" customModule="CoordinatorFlowTestProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TUW-8F-usQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="plw-RJ-DlM">
+                                <rect key="frame" x="163" y="318.5" width="48" height="30"/>
+                                <state key="normal" title="Logout"/>
+                                <connections>
+                                    <action selector="didTapLogout:" destination="Ohl-cO-0Nq" eventType="touchUpInside" id="Lhq-VI-tYu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="plw-RJ-DlM" firstAttribute="centerX" secondItem="TUW-8F-usQ" secondAttribute="centerX" id="EZN-1F-amh"/>
+                            <constraint firstItem="plw-RJ-DlM" firstAttribute="centerY" secondItem="TUW-8F-usQ" secondAttribute="centerY" id="R7h-FB-UBa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tAp-i9-Fjf"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="mostViewed" id="Ya9-Sv-A8J"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sz4-Eq-2tB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="376" y="735"/>
+        </scene>
+        <!--Goods ListVC-->
+        <scene sceneID="dGR-58-9pN">
+            <objects>
+                <viewController storyboardIdentifier="GoodsListVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="MfU-9q-MLd" customClass="GoodsListVC" customModule="CoordinatorFlowTestProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5Ho-tn-Rx7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="fCb-pl-n15"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="topRated" id="M1Z-fl-HIC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Ur-oO-I8L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="376" y="70"/>
+        </scene>
+        <!--Main Authorized Tab Bar-->
+        <scene sceneID="hj6-gV-UBd">
+            <objects>
+                <tabBarController storyboardIdentifier="UITabBarController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vAq-qr-LMS" customClass="MainAuthorizedTabBar" customModule="CoordinatorFlowTestProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ePZ-XH-yRw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="MfU-9q-MLd" kind="relationship" relationship="viewControllers" id="dHR-V2-K9U"/>
+                        <segue destination="Ohl-cO-0Nq" kind="relationship" relationship="viewControllers" id="7nj-ay-EW8"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ALX-DP-t2N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-753" y="323"/>
+        </scene>
+    </scenes>
+</document>

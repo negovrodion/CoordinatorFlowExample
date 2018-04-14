@@ -1,0 +1,6 @@
+framework module CoordinatorFlow {
+  umbrella header "CoordinatorFlow-umbrella.h"
+
+  export *
+  module * { export * }
+}

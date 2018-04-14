@@ -1,0 +1,16 @@
+PODS:
+  - CoordinatorFlow (0.1.0)
+
+DEPENDENCIES:
+  - CoordinatorFlow (from `/Users/negovrodion/Documents/Projects/CoordinatorFlowPod/CoordinatorFlow`)
+
+EXTERNAL SOURCES:
+  CoordinatorFlow:
+    :path: "/Users/negovrodion/Documents/Projects/CoordinatorFlowPod/CoordinatorFlow"
+
+SPEC CHECKSUMS:
+  CoordinatorFlow: 4254dafcb7b0fb3e79e196cb9321d1baa8cbf759
+
+PODFILE CHECKSUM: 0398a8dbc96ca1fa57f56fb8b7b6e6834fea0f54
+
+COCOAPODS: 1.5.0
